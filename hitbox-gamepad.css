@@ -63,7 +63,7 @@ body.dark .hitbox-logo.dark {
   margin-top: 12vmin;
 }
 .button-container:nth-of-type(4) {
-  margin-left: 52vmin;
+  margin-left: 42vmin;
   margin-top: 28vmin;
   height: 12vmin;
   width: 12vmin;
@@ -82,7 +82,7 @@ body.dark .hitbox-logo.dark {
 }
 .button-container:nth-of-type(8) {
   margin-left: 80vmin;
-  margin-top: 10vmin;
+  margin-top: 12vmin;
 }
 .button-container:nth-of-type(9) {
   margin-left: 48vmin;
@@ -98,32 +98,22 @@ body.dark .hitbox-logo.dark {
 }
 .button-container:nth-of-type(12) {
   margin-left: 78vmin;
-  margin-top: 20vmin;
+  margin-top: 22vmin;
 }
 
 .hitbox-logo {
   position: absolute;
-}
-.hitbox-logo.light {
   margin-left: 0;
   margin-top: 32vmin;
   max-width: 40vmin;
 }
-.hitbox-logo.light.vertical {
+.hitbox-logo.vertical {
   margin-left: -14vmin;
   margin-top: 18vmin;
   transform: rotate(90deg);
 }
 .hitbox-logo.dark {
   display: none;
-  margin-left: -6vmin;
-  margin-top: 30vmin;
-  max-width: 50vmin;
-}
-.hitbox-logo.dark.vertical {
-  margin-left: -20vmin;
-  margin-top: 16vmin;
-  transform: rotate(90deg);
 }
 
 .is-connected {
