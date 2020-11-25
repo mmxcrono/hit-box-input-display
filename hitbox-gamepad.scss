@@ -1,0 +1,227 @@
+
+body {
+	background: #f0f0f0;
+	color: black;
+	font-family: "Helvatica", "Arial";
+	transition: all linear 1s;
+
+	.hitbox-logo {
+
+		&.light {
+			display: block;
+		}
+
+		&.dark {
+			display: none;
+		}
+	}
+
+	&.dark {
+		background: #101010;
+		color: white;
+
+		.hitbox-logo {
+
+			&.light {
+				display: none;
+			}
+
+			&.dark {
+				display: block;
+			}
+
+		}
+	}
+}
+
+
+.buttons {
+	position: relative;
+	height: 44vmin;
+}
+
+.button-svg {
+
+	.primary {
+		fill: black;
+	}
+
+}
+
+
+.red {
+
+	.button-svg {
+
+		.secondary {
+			fill: #aa0000;
+		}
+
+	}
+
+
+
+	&.pressed {
+
+		.button-svg {
+
+			.primary {
+				fill: #dd3030;
+			}
+
+		}
+	}
+
+}
+
+.white {
+
+	.button-svg {
+
+		.secondary {
+			fill: #aaaaaa;
+		}
+
+	}
+
+
+
+	&.pressed {
+
+		.button-svg {
+
+			.primary {
+				fill: #f0f0f0;
+			}
+
+		}
+	}
+
+}
+
+.button-container {
+	position: absolute;
+	width: 10vmin;
+	height: 10vmin;
+
+	/* Button Positioning */
+	// Red Buttons
+	&:nth-of-type(1) {
+		margin-left: 20vmin;
+		margin-top: 10vmin;
+	}
+
+	&:nth-of-type(2) {
+		margin-left: 30vmin;
+		margin-top: 8vmin;
+	}
+
+	&:nth-of-type(3) {
+		margin-left: 40vmin;
+		margin-top: 12vmin;
+	}
+
+	&:nth-of-type(4) {
+		margin-left: 52vmin;
+		margin-top: 28vmin;
+		height: 12vmin;
+		width: 12vmin;
+	}
+
+
+	// White Buttons - Top
+	&:nth-of-type(5) {
+		margin-left: 50vmin;
+		margin-top: 8vmin;
+	}
+
+	&:nth-of-type(6) {
+		margin-left: 60vmin;
+		margin-top: 6vmin;
+	}
+
+	&:nth-of-type(7) {
+		margin-left: 70vmin;
+		margin-top: 8vmin;
+	}
+
+	&:nth-of-type(8) {
+		margin-left: 80vmin;
+		margin-top: 10vmin;
+	}
+
+	// White Buttons - Bottom
+	&:nth-of-type(9) {
+		margin-left: 48vmin;
+		margin-top: 18vmin;
+	}
+
+	&:nth-of-type(10) {
+		margin-left: 58vmin;
+		margin-top: 16vmin;
+	}
+
+	&:nth-of-type(11) {
+		margin-left: 68vmin;
+		margin-top: 18vmin;
+	}
+
+	&:nth-of-type(12) {
+		margin-left: 78vmin;
+		margin-top: 20vmin;
+	}
+}
+
+
+.hitbox-logo {
+	position: absolute;
+
+	&.light {
+		margin-left: 0;
+		margin-top: 32vmin;
+		max-width: 40vmin;
+
+
+		&.vertical {
+			margin-left: -14vmin;
+			margin-top: 18vmin;
+			transform: rotate(90deg);
+		}
+
+	}
+
+	&.dark {
+		display: none;
+		margin-left: -6vmin;
+		margin-top: 30vmin;
+		max-width: 50vmin;
+
+		&.vertical {
+			margin-left: -20vmin;
+			margin-top: 16vmin;
+			transform: rotate(90deg);
+		}
+
+	}
+
+}
+
+.is-connected {
+	margin-left: .5em;
+}
+
+.check-mark {
+	display: none;
+
+	&.connected {
+		display: inline-block;
+	}
+}
+
+.cross-mark {
+	display: inline-block;
+
+	&.connected {
+		display: none;
+	}
+}
